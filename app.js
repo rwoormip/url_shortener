@@ -1,8 +1,11 @@
 const express = require('express')
+
+require('./config/mongoose')
+
 const app = express()
 
 app.get('/', (req, res) => {
-  res.send('hello aaa')
+  res.send('hello')
 })
 
 app.listen(3000, () => {
